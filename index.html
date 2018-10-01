@@ -1,0 +1,43 @@
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>antest1</title>
+	<style>
+		body {
+		background-color: 	#FFF8DC;
+			font-family: "Arial", sans-serif;
+			user-select: none;
+		}
+		.btn {
+			background-color: transparent;
+			color: black;
+			margin: 1px;
+		}
+		
+		.btn:hover {
+			background-color: black;
+			color: white;
+		}
+	</style>
+	<body onload="hello()">
+		<h1>antest1</h1>		
+		<img id="index_img" width="400">
+		<script>
+			var hello = function() {
+				var total = 35;
+				var id = Math.floor((Math.random() * total) + 1);
+				var img = document.getElementById("index_img");
+				img.src = "img/" + id + ".png";
+			}			
+		</script>
+		<p>
+			<a class="btn" href="mailto:alias_n@yonsei.ac.kr">[Mail]</a>
+			<a class="btn" href="materials/">[Materials]</a>
+			<a class="btn" target="_blank" href="cv_leegyeongbok_2018.pdf">[CV]</a>
+			<a class="btn" target="_blank" href="https://github.com/antest1">[Github]</a>
+		</p>
+		<hr/>
+		<p style="font-style: italic;">Think like a man of action and act like man of thought. 『A.N』</p>
+		
+	</body>
+</html>
