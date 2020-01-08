@@ -4,116 +4,79 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Gyeongbok Lee (antest1)</title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/theme.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	
-	<body onload='hello()'>
-		<div class="container mt-3">
+	<body>
+		<div id="content-wrap" class="container mt-3">
 			<h3 class="mb-3">
-			  Gyeongbok Lee <small class="text-muted">antest1</small>
+			  Gyeongbok Lee <small class="text-muted">a.k.a antest1</small>
 			</h3>
-
-			<div class="mb-4">
-				<div class="mb-2">
-					<img id="index_img" class="rounded d-block" height="270" alt="random pictures by me" title="random pictures">
-				</div>
-				<div class="btn-group" role="group" aria-label="label">
-					<a class="btn btn-primary" href="mailto:alias_n@live.com" role="button">E-mail</a>
-					<a class="btn btn-primary" href="materials/" target="_blank" role="button">Materials</a>
-					<a class="btn btn-primary" href="cv_leegyeongbok_2018.pdf" target="_blank" role="button">CV</a>
-					<a class="btn btn-primary" href="https://github.com/antest1" target="_blank" role="button">Github</a>
-				</div>
-			</div>
-
 			<div class="mb-3">
-				<h4>Education</h4>
-				<div class="list-group">
-				  <div class="list-group-item list-group-item-action flex-column align-items-start">
-					<div class="d-flex w-100 justify-content-between">
-					  <h5 class="mb-1">Yonsei University</h5>
-					  <small class="text-muted">2016.09 ~ 2019.02</small>
+				<div class="row">
+					<div class="mb-2 col-2">
+						<img id="index_img" src="img/wa_icecream.jpg" class="rounded d-block" height="140" alt="" title="">
 					</div>
-					<p class="mb-0">M.S., Computer Science</p>
-					<small class="text-muted">Thesis: Explainable Machine Reading Comprehension Framework for Model Debugging</small>
-				  </div>
-					<div class="list-group-item list-group-item-action flex-column align-items-start">
-					<div class="d-flex w-100 justify-content-between">
-					  <h5 class="mb-1">Yonsei University</h5>
-					  <small class="text-muted">2013.03 ~ 2016.08</small>
+					<div class="mb-2 col-10">
+					I'm currently working as a researcher in Knowledge AI Lab., <a href="http://global.ncsoft.com/global/" target="_blank">NCSOFT Co.</a><br/>
+					My research interests lie in the field of <b>knowledge representation</b>, <b>model interpretatation</b>, and <b>knowledge distillation</b> mainly on <b>natural language processing</b> area.
+					I'm also interested in the techniques for deploying deep learning models in various environments.
+					Sometimes I do (and study) web and Android development. 
+					<div class="mt-1" aria-label="label">
+						<a class="" href="mailto:alias_n@live.com" role="button">[E-mail]</a>
+						<a class="" href="https://github.com/antest1" target="_blank" role="button">[Github]</a>
+						<a class="" href="materials/" target="_blank" role="button">[Materials]</a>
+						<a class="" href="cv_leegyeongbok_2018.pdf" target="_blank" role="button">[CV(2018)]</a>
 					</div>
-					<p class="mb-0">B.S., Computer Science</p>
-					<small class="text-muted">Summa Cum Laude (Top 1%)</small>
-				  </div>
+					</div>
+				</div>				
+			</div>
+
+			<div class="mb-1">
+				<h4 class="head">Education</h4>
+				<div class="content-body">
+					<ul class="content-list">
+						<li><div><a href="https://www.yonsei.ac.kr/" target="_blank">Yonsei University</a>, M.S., Computer Science, 2016.09 - 2019.02</div>
+						<div class="small">Thesis: Explainable Machine Reading Comprehension Framework for Model Debugging</div>
+						<div class="small">Advised by <a href="http://dilab.yonsei.ac.kr/~swhwang/" target="_blank">Seung-won Hwang</a> in <a href="http://dilab.yonsei.ac.kr/" target="_blank">Data Intelligence Lab</a></div></li>
+						<li><div>Yonsei University, B.S., Computer Science, 2013.03 - 2016.08</div>
+						<div class="small">Summa Cum Laude (Top 1%)</div></li>
+					</ul>
 				</div>
 			</div>
 
-				
-			<div class="mb-3">
-				<h4>Publications</h4>
-				<div class="list-group">
-				  <div class="list-group-item list-group-item-action flex-column align-items-start">
-					<div class="d-flex w-100 justify-content-between">
-					  <h5 class="mb-1">Explanatory and Actionable Debugging for Machine Learning: A TableQA Demonstration</h5>
-					  <small class="text-muted">2019</small>
-					</div>
-					<p class="mb-1">Minseok Cho, <strong>Gyeongbok Lee</strong>, Seung-won Hwang</p>
-					<small class="text-muted">Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR'19) Demonstration Paper <a href="publications/sigir2019demo.pdf" target="_blank">[Paper]</a> <a href="https://www.youtube.com/watch?v=yIjxMn--tug" target="_blank">[Video]</a></small>
-				  </div>
-				  <div class="list-group-item list-group-item-action flex-column align-items-start">
-					<div class="d-flex w-100 justify-content-between">
-					  <h5 class="mb-1">QADiver: Interactive Framework for Diagnosing QA Models</h5>
-					  <small class="text-muted">2019</small>
-					</div>
-					<p class="mb-1"><strong>Gyeongbok Lee</strong>, Sungdong Kim, Seung-won Hwang</p>
-					<small class="text-muted">Thirty-Third AAAI Conference on Artificial Intelligence (AAAI-19) Demonstrations Program <a href="publications/aaai2019demo.pdf" target="_blank">[Paper]</a> <a href="https://www.youtube.com/watch?v=V6c8nls6Qcc" target="_blank">[Video]</a> <a href="https://github.com/naver/qadiver" target="_blank">[Code]</a></small>
-				  </div>
-				  <div class="list-group-item list-group-item-action flex-column align-items-start">
-					<div class="d-flex w-100 justify-content-between">
-					  <h5 class="mb-1">Visual Choice of Plausible Alternatives: An Evaluation of Image-based Commonsense Causal Reasoning</h5>
-					  <small class="text-muted">2018</small>
-					</div>
-					<p class="mb-1">Jinyoung Yeo, <strong>Gyeongbok Lee</strong>, Gengyu Wang, Seungtaek Choi, Hyunsouk Cho, Reinald Kim Amplayo, Seung-won Hwang</p>
-					<small class="text-muted">11th International Conference on Language Resources and Evaluation (LREC 2018) <a href="publications/lrec18.pdf" target="_blank">[Paper]</a> <a href="https://antest1.github.io/VCOPA-Dataset/" target="_blank">[Dataset]</a></small>
-				  </div>
+			<div class="mb-1">
+				<h4 class="head">Publications</h4>
+				<div class="content-body">
+					<ul class="content-list">
+						<li><div>Explanatory and Actionable Debugging for Machine Learning: A TableQA Demonstration</div>
+						<div class="small">Minseok Cho, <u>Gyeongbok Lee</u>, Seung-won Hwang</div>
+						<div class="small">SIGIR 2019 Demonstration <a href="publications/sigir2019demo.pdf" target="_blank">[Paper]</a> <a href="https://www.youtube.com/watch?v=yIjxMn--tug" target="_blank">[Video]</a></div></li>
+						<li><div>QADiver: Interactive Framework for Diagnosing QA Models</div>
+						<div class="small"><u>Gyeongbok Lee</u>, Sungdong Kim, Seung-won Hwang</div>
+						<div class="small">AAAI 2019 Demonstration <a href="publications/aaai2019demo.pdf" target="_blank">[Paper]</a> <a href="https://www.youtube.com/watch?v=V6c8nls6Qcc" target="_blank">[Video]</a> <a href="https://github.com/naver/qadiver" target="_blank">[Code]</a></div></li>
+						<li><div>Visual Choice of Plausible Alternatives: An Evaluation of Image-based Commonsense Causal Reasoning</div>
+						<div class="small">Jinyoung Yeo, <u>Gyeongbok Lee</u>, Gengyu Wang, Seungtaek Choi, Hyunsouk Cho, Reinald Kim Amplayo, Seung-won Hwang</div>
+						<div class="small">LREC 2018 <a href="publications/lrec18.pdf" target="_blank">[Paper]</a> <a href="https://antest1.github.io/VCOPA-Dataset/" target="_blank">[Dataset]</a></div></li>
+					</ul>
 				</div>
 			</div>
 
-			<div class="mb-3">
-				<h4>Personal Projects</h4>
-				<div class="list-group">
-					<div class="list-group-item list-group-item-action flex-column align-items-start">
-					<div class="d-flex w-100 justify-content-between">
-					  <h5 class="mb-1">GotoBrowser: Android Browser for KanColle 2nd Phase (HTML5)</h5>
-					  <small class="text-muted">2019.03 ~ Current</small>
-					</div>
-					<p class="mb-1">Github: <a href="https://github.com/antest1/GotoBrowser" target="_blank" 	>antest1/GotoBrowser</a></p>
-				  </div>
-				  <div class="list-group-item list-group-item-action flex-column align-items-start">
-					<div class="d-flex w-100 justify-content-between">
-					  <h5 class="mb-1">Kcanotify: Viewer Application for KanColle Android</h5>
-					  <small class="text-muted">2016.12 ~ Current</small>
-					</div>
-					<p class="mb-1">Github: <a href="https://github.com/antest1/kcanotify" target="_blank" 	>antest1/kcanotify</a></p>
-				  </div>
+			<div class="mb-1">
+				<h4 class="head">Personal Projects</h4>
+				<div class="content-body">
+					<ul class="content-list">
+						<li><div><a href="https://play.google.com/store/apps/details?id=com.antest1.kcanotify" target="_blank">Kcanotify: Viewer Application for KanColle Android</a></div>
+						<div class="small">2016.12 ~ Current | Github: <a href="https://github.com/antest1/kcanotify" target="_blank">antest1/kcanotify</a></div></li>
+						<li><div><a href="https://antest1.github.io/GotoBrowser/" target="_blank">GotoBrowser: Android Browser for KanColle 2nd Phase (HTML5)</a></div>
+						<div class="small">2019.03 ~ Current | Github: <a href="https://github.com/antest1/GotoBrowser" target="_blank">antest1/GotoBrowser</a></div></li>
+					</ul>
 				</div>
 			</div>
-
-			<hr/>
-			<blockquote class="blockquote">
-			  <p class="mb-0">Think like a man of action and act like man of thought.</p>
-			  <footer class="blockquote-footer">Henri Bergson</footer>
-			</blockquote>
 		</div>
-		
-		<script>
-			var hello = function() {
-				var total = 35;
-				var id = Math.floor((Math.random() * total) + 1);
-				$("#index_img").attr("src", "img/" + id + ".jpg");
-			}
-			$("#index_img").click(hello);
-		</script>
 	</body>
 </html>
